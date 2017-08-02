@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254C03A10EF3EE40ACDC9065 /* Pods_Ness_Coding_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9D52819F018136669EA661 /* Pods_Ness_Coding_TestTests.framework */; };
+		4E2715812698F152E27FFD7F /* Pods_Ness_Coding_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91313BF26D0FE27D1FB4BFE /* Pods_Ness_Coding_Test.framework */; };
 		5160DA941F32834900373FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DA931F32834900373FEF /* AppDelegate.swift */; };
-		5160DA961F32834900373FEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DA951F32834900373FEF /* ViewController.swift */; };
+		5160DA961F32834900373FEF /* FetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DA951F32834900373FEF /* FetchViewController.swift */; };
 		5160DA991F32834900373FEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5160DA971F32834900373FEF /* Main.storyboard */; };
 		5160DA9C1F32834900373FEF /* Ness_Coding_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5160DA9A1F32834900373FEF /* Ness_Coding_Test.xcdatamodeld */; };
 		5160DA9E1F32834900373FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5160DA9D1F32834900373FEF /* Assets.xcassets */; };
 		5160DAA11F32834900373FEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5160DA9F1F32834900373FEF /* LaunchScreen.storyboard */; };
 		5160DAAC1F32834900373FEF /* Ness_Coding_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DAAB1F32834900373FEF /* Ness_Coding_TestTests.swift */; };
 		5160DAB71F32834900373FEF /* Ness_Coding_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DAB61F32834900373FEF /* Ness_Coding_TestUITests.swift */; };
+		5160DAC81F32859C00373FEF /* PersonProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DAC71F32859C00373FEF /* PersonProfile.swift */; };
+		5160DACA1F32870D00373FEF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DAC91F32870D00373FEF /* ProfileViewModel.swift */; };
+		5160DACC1F32880600373FEF /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DACB1F32880600373FEF /* PersonsListViewController.swift */; };
+		AD84F1F93D958E1B32806B43 /* Pods_Ness_Coding_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DFA800E23C77FBB51D2120 /* Pods_Ness_Coding_TestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00A19FB608E6E5B2324979C5 /* Pods-Ness Coding TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ness Coding TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ness Coding TestTests/Pods-Ness Coding TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		04E67E780500D7C70D3CB3B2 /* Pods-Ness Coding Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ness Coding Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ness Coding Test/Pods-Ness Coding Test.debug.xcconfig"; sourceTree = "<group>"; };
+		0678B8C2AFDD063022A89A36 /* Pods-Ness Coding Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ness Coding Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ness Coding Test/Pods-Ness Coding Test.release.xcconfig"; sourceTree = "<group>"; };
 		5160DA901F32834900373FEF /* Ness Coding Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ness Coding Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5160DA931F32834900373FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5160DA951F32834900373FEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5160DA951F32834900373FEF /* FetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchViewController.swift; sourceTree = "<group>"; };
 		5160DA981F32834900373FEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5160DA9B1F32834900373FEF /* Ness_Coding_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ness_Coding_Test.xcdatamodel; sourceTree = "<group>"; };
 		5160DA9D1F32834900373FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +58,15 @@
 		5160DAB21F32834900373FEF /* Ness Coding TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ness Coding TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5160DAB61F32834900373FEF /* Ness_Coding_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ness_Coding_TestUITests.swift; sourceTree = "<group>"; };
 		5160DAB81F32834900373FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5160DAC71F32859C00373FEF /* PersonProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonProfile.swift; sourceTree = "<group>"; };
+		5160DAC91F32870D00373FEF /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		5160DACB1F32880600373FEF /* PersonsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		5F9D52819F018136669EA661 /* Pods_Ness_Coding_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ness_Coding_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEE9290D596E99D478E10BA /* Pods-Ness Coding TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ness Coding TestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ness Coding TestTests/Pods-Ness Coding TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6DFA800E23C77FBB51D2120 /* Pods_Ness_Coding_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ness_Coding_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA479A5AAFD12CEE496DC876 /* Pods-Ness Coding TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ness Coding TestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ness Coding TestUITests/Pods-Ness Coding TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E91313BF26D0FE27D1FB4BFE /* Pods_Ness_Coding_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ness_Coding_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA564C8AC0D2BA87F5E69A49 /* Pods-Ness Coding TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ness Coding TestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ness Coding TestUITests/Pods-Ness Coding TestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E2715812698F152E27FFD7F /* Pods_Ness_Coding_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254C03A10EF3EE40ACDC9065 /* Pods_Ness_Coding_TestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD84F1F93D958E1B32806B43 /* Pods_Ness_Coding_TestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +104,8 @@
 				5160DAAA1F32834900373FEF /* Ness Coding TestTests */,
 				5160DAB51F32834900373FEF /* Ness Coding TestUITests */,
 				5160DA911F32834900373FEF /* Products */,
+				CE6E38C80FD34CD805F307B4 /* Pods */,
+				6A4EBF177BECD4A932B6C1ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +122,10 @@
 		5160DA921F32834900373FEF /* Ness Coding Test */ = {
 			isa = PBXGroup;
 			children = (
+				5160DAC61F32854700373FEF /* ViewModel */,
+				5160DAC41F3284DB00373FEF /* Model */,
+				5160DAC51F32853C00373FEF /* View */,
 				5160DA931F32834900373FEF /* AppDelegate.swift */,
-				5160DA951F32834900373FEF /* ViewController.swift */,
 				5160DA971F32834900373FEF /* Main.storyboard */,
 				5160DA9D1F32834900373FEF /* Assets.xcassets */,
 				5160DA9F1F32834900373FEF /* LaunchScreen.storyboard */,
@@ -128,6 +153,54 @@
 			path = "Ness Coding TestUITests";
 			sourceTree = "<group>";
 		};
+		5160DAC41F3284DB00373FEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5160DAC71F32859C00373FEF /* PersonProfile.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5160DAC51F32853C00373FEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5160DA951F32834900373FEF /* FetchViewController.swift */,
+				5160DACB1F32880600373FEF /* PersonsListViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5160DAC61F32854700373FEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5160DAC91F32870D00373FEF /* ProfileViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		6A4EBF177BECD4A932B6C1ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E91313BF26D0FE27D1FB4BFE /* Pods_Ness_Coding_Test.framework */,
+				5F9D52819F018136669EA661 /* Pods_Ness_Coding_TestTests.framework */,
+				A6DFA800E23C77FBB51D2120 /* Pods_Ness_Coding_TestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE6E38C80FD34CD805F307B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04E67E780500D7C70D3CB3B2 /* Pods-Ness Coding Test.debug.xcconfig */,
+				0678B8C2AFDD063022A89A36 /* Pods-Ness Coding Test.release.xcconfig */,
+				00A19FB608E6E5B2324979C5 /* Pods-Ness Coding TestTests.debug.xcconfig */,
+				9FEE9290D596E99D478E10BA /* Pods-Ness Coding TestTests.release.xcconfig */,
+				BA479A5AAFD12CEE496DC876 /* Pods-Ness Coding TestUITests.debug.xcconfig */,
+				FA564C8AC0D2BA87F5E69A49 /* Pods-Ness Coding TestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5160DABB1F32834900373FEF /* Build configuration list for PBXNativeTarget "Ness Coding Test" */;
 			buildPhases = (
+				96162DD29835AC2D73BCDB06 /* [CP] Check Pods Manifest.lock */,
 				5160DA8C1F32834900373FEF /* Sources */,
 				5160DA8D1F32834900373FEF /* Frameworks */,
 				5160DA8E1F32834900373FEF /* Resources */,
+				2DA79767B91E2BA86AEAF3C4 /* [CP] Embed Pods Frameworks */,
+				00E25AD5FCC58A26D4BF244A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5160DABE1F32834900373FEF /* Build configuration list for PBXNativeTarget "Ness Coding TestTests" */;
 			buildPhases = (
+				6DBBCB9BDAF9F038F6523287 /* [CP] Check Pods Manifest.lock */,
 				5160DAA31F32834900373FEF /* Sources */,
 				5160DAA41F32834900373FEF /* Frameworks */,
 				5160DAA51F32834900373FEF /* Resources */,
+				19A4A245109A4D9FA21EF713 /* [CP] Embed Pods Frameworks */,
+				7692768650C0E0DBF7115209 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5160DAC11F32834900373FEF /* Build configuration list for PBXNativeTarget "Ness Coding TestUITests" */;
 			buildPhases = (
+				1C0B7AC0AD09AD9670534D3D /* [CP] Check Pods Manifest.lock */,
 				5160DAAE1F32834900373FEF /* Sources */,
 				5160DAAF1F32834900373FEF /* Frameworks */,
 				5160DAB01F32834900373FEF /* Resources */,
+				57F02B03AF596A3483528405 /* [CP] Embed Pods Frameworks */,
+				71B516BAC76D67F1EA0A50AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +342,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00E25AD5FCC58A26D4BF244A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ness Coding Test/Pods-Ness Coding Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19A4A245109A4D9FA21EF713 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ness Coding TestTests/Pods-Ness Coding TestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C0B7AC0AD09AD9670534D3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DA79767B91E2BA86AEAF3C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ness Coding Test/Pods-Ness Coding Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57F02B03AF596A3483528405 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ness Coding TestUITests/Pods-Ness Coding TestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DBBCB9BDAF9F038F6523287 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71B516BAC76D67F1EA0A50AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ness Coding TestUITests/Pods-Ness Coding TestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7692768650C0E0DBF7115209 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ness Coding TestTests/Pods-Ness Coding TestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96162DD29835AC2D73BCDB06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5160DA8C1F32834900373FEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5160DA9C1F32834900373FEF /* Ness_Coding_Test.xcdatamodeld in Sources */,
-				5160DA961F32834900373FEF /* ViewController.swift in Sources */,
+				5160DACC1F32880600373FEF /* PersonsListViewController.swift in Sources */,
+				5160DA961F32834900373FEF /* FetchViewController.swift in Sources */,
+				5160DAC81F32859C00373FEF /* PersonProfile.swift in Sources */,
 				5160DA941F32834900373FEF /* AppDelegate.swift in Sources */,
+				5160DACA1F32870D00373FEF /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +640,7 @@
 		};
 		5160DABC1F32834900373FEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E67E780500D7C70D3CB3B2 /* Pods-Ness Coding Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KCK9TD9947;
@@ -431,6 +655,7 @@
 		};
 		5160DABD1F32834900373FEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0678B8C2AFDD063022A89A36 /* Pods-Ness Coding Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KCK9TD9947;
@@ -445,6 +670,7 @@
 		};
 		5160DABF1F32834900373FEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A19FB608E6E5B2324979C5 /* Pods-Ness Coding TestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +686,7 @@
 		};
 		5160DAC01F32834900373FEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEE9290D596E99D478E10BA /* Pods-Ness Coding TestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +702,7 @@
 		};
 		5160DAC21F32834900373FEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA479A5AAFD12CEE496DC876 /* Pods-Ness Coding TestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KCK9TD9947;
@@ -489,6 +717,7 @@
 		};
 		5160DAC31F32834900373FEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA564C8AC0D2BA87F5E69A49 /* Pods-Ness Coding TestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KCK9TD9947;
