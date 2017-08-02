@@ -10,9 +10,12 @@ import UIKit
 
 class PersonsListViewController: UITableViewController {
 
+    let profiles: [ProfileViewModel] = (UIApplication.shared.delegate as! AppDelegate).profiles
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(profiles)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +32,23 @@ class PersonsListViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return profiles.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
+        let profileViewModel = profiles[indexPath.row]
+        
+        cell.textLabel?.text = profileViewModel.username
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

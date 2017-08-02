@@ -9,11 +9,11 @@
 import Foundation
 
 class PersonProfile:NSObject {
-    var username:String?
-    var name:String?
-    var email:String?
+    var username:String
+    var name:String
+    var email:String
     
-    init(name:String,username:String,email:String) {
+    init(name:String, username:String, email:String) {
         self.name = name
         self.username = username
         self.email = email

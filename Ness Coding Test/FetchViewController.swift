@@ -13,6 +13,7 @@ import Alamofire
 class FetchViewController: UIViewController {
     
     let userURL = "https://jsonplaceholder.typicode.com/users"
+    var profiles: [ProfileViewModel] = (UIApplication.shared.delegate as! AppDelegate).profiles
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +27,16 @@ class FetchViewController: UIViewController {
 
     @IBAction func fetchData(_ sender: Any) {
         Alamofire.request(userURL).responseJSON(completionHandler: { response in
-            if let json = response.result.value {
-                print(json)
-                self.jsonParsing(data: json as! Data)
+            if let data = response.data, let _ = String(data: data, encoding: .utf8) {
+                let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [[String:Any]]
+                
+                for user in json! {
+                    let personProfile = PersonProfile(name: (user["name"] as? String)!, username: (user["username"] as? String)!, email: (user["email"] as? String)!)
+                    self.profiles.append(ProfileViewModel(personProfile: personProfile))
+                }
             }
         })
-    }
-    
-    func jsonParsing(data:Data) {
-        
+        print(profiles)
     }
 }
 
