@@ -13,11 +13,11 @@ import Alamofire
 class FetchViewController: UIViewController {
     
     let userURL = "https://jsonplaceholder.typicode.com/users"
-    var profiles: [ProfileViewModel] = (UIApplication.shared.delegate as! AppDelegate).profiles
+    var profiles:[ProfileViewModel] = [ProfileViewModel]()
+    var dataDownloadSuccessful = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,14 +29,24 @@ class FetchViewController: UIViewController {
         Alamofire.request(userURL).responseJSON(completionHandler: { response in
             if let data = response.data, let _ = String(data: data, encoding: .utf8) {
                 let json = try! JSONSerialization.jsonObject(with: data, options: []) as? [[String:Any]]
-                
                 for user in json! {
                     let personProfile = PersonProfile(name: (user["name"] as? String)!, username: (user["username"] as? String)!, email: (user["email"] as? String)!)
+                    print(personProfile.name)
                     self.profiles.append(ProfileViewModel(personProfile: personProfile))
                 }
+                self.dataDownloadSuccessful = true
             }
+            self.performSegue(withIdentifier: "showProfiles", sender: self)
         })
-        print(profiles)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showProfiles" {
+            //present your view controller or do some code
+            let vc = PersonsListViewController() //your view controller
+            vc.profiles = profiles
+            self.present(vc, animated: true, completion: nil)
+        }
     }
 }
 

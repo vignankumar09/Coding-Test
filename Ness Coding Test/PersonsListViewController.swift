@@ -9,13 +9,14 @@
 import UIKit
 
 class PersonsListViewController: UITableViewController {
-
-    let profiles: [ProfileViewModel] = (UIApplication.shared.delegate as! AppDelegate).profiles
     
+    var profiles:[ProfileViewModel]!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print(profiles)
+        for i in profiles {
+            print(i.username)
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,13 +41,12 @@ class PersonsListViewController: UITableViewController {
         return profiles.count
     }
 
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
-        let profileViewModel = profiles[indexPath.row]
-        
-        cell.textLabel?.text = profileViewModel.username
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) 
+        cell.textLabel?.text = profiles[indexPath.row].username
         return cell
     }
 

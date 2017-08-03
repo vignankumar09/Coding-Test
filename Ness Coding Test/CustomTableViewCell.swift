@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
+class ProfileTableViewCell: UITableViewCell {
 
     @IBOutlet weak var usernameLBL: UILabel!
     

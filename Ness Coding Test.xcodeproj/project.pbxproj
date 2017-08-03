@@ -19,8 +19,7 @@
 		5160DAB71F32834900373FEF /* Ness_Coding_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DAB61F32834900373FEF /* Ness_Coding_TestUITests.swift */; };
 		5160DAC81F32859C00373FEF /* PersonProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DAC71F32859C00373FEF /* PersonProfile.swift */; };
 		5160DACA1F32870D00373FEF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DAC91F32870D00373FEF /* ProfileViewModel.swift */; };
-		5160DACC1F32880600373FEF /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DACB1F32880600373FEF /* PersonsListViewController.swift */; };
-		5160DACE1F329B5900373FEF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DACD1F329B5900373FEF /* CustomTableViewCell.swift */; };
+		5160DAD01F32BD8A00373FEF /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160DACF1F32BD8A00373FEF /* PersonsListViewController.swift */; };
 		AD84F1F93D958E1B32806B43 /* Pods_Ness_Coding_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DFA800E23C77FBB51D2120 /* Pods_Ness_Coding_TestUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +60,7 @@
 		5160DAB81F32834900373FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5160DAC71F32859C00373FEF /* PersonProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonProfile.swift; sourceTree = "<group>"; };
 		5160DAC91F32870D00373FEF /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		5160DACB1F32880600373FEF /* PersonsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
-		5160DACD1F329B5900373FEF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5160DACF1F32BD8A00373FEF /* PersonsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		5F9D52819F018136669EA661 /* Pods_Ness_Coding_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ness_Coding_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FEE9290D596E99D478E10BA /* Pods-Ness Coding TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ness Coding TestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ness Coding TestTests/Pods-Ness Coding TestTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6DFA800E23C77FBB51D2120 /* Pods_Ness_Coding_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ness_Coding_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				5160DAC71F32859C00373FEF /* PersonProfile.swift */,
-				5160DACD1F329B5900373FEF /* CustomTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -168,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5160DA951F32834900373FEF /* FetchViewController.swift */,
-				5160DACB1F32880600373FEF /* PersonsListViewController.swift */,
+				5160DACF1F32BD8A00373FEF /* PersonsListViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -489,9 +486,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5160DA9C1F32834900373FEF /* Ness_Coding_Test.xcdatamodeld in Sources */,
-				5160DACC1F32880600373FEF /* PersonsListViewController.swift in Sources */,
+				5160DAD01F32BD8A00373FEF /* PersonsListViewController.swift in Sources */,
 				5160DA961F32834900373FEF /* FetchViewController.swift in Sources */,
-				5160DACE1F329B5900373FEF /* CustomTableViewCell.swift in Sources */,
 				5160DAC81F32859C00373FEF /* PersonProfile.swift in Sources */,
 				5160DA941F32834900373FEF /* AppDelegate.swift in Sources */,
 				5160DACA1F32870D00373FEF /* ProfileViewModel.swift in Sources */,
