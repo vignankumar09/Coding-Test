@@ -1,0 +1,6 @@
+framework module Pods_Ness_Coding_Test {
+  umbrella header "Pods-Ness Coding Test-umbrella.h"
+
+  export *
+  module * { export * }
+}
