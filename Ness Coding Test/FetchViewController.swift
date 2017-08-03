@@ -14,7 +14,6 @@ class FetchViewController: UIViewController {
     
     let userURL = "https://jsonplaceholder.typicode.com/users"
     var profiles:[ProfileViewModel] = [ProfileViewModel]()
-    var dataDownloadSuccessful = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +33,6 @@ class FetchViewController: UIViewController {
                     print(personProfile.name)
                     self.profiles.append(ProfileViewModel(personProfile: personProfile))
                 }
-                self.dataDownloadSuccessful = true
             }
             self.performSegue(withIdentifier: "showProfiles", sender: self)
         })

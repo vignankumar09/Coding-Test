@@ -28,9 +28,15 @@ class Ness_Coding_TestUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    // Test case to check whether 10 usernames are populated into the tableview
+    func testFetchedData() {
+        
+        let app = XCUIApplication()
+        app.buttons["Fetch"].tap()
+        let table = app.tables
+        let count = table.cells.count
+        XCTAssert(count == 10)
+        
     }
     
 }
